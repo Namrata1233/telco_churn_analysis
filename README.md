@@ -1,33 +1,65 @@
-# <center><ins>Telco Customer Churn Analysis: EDA & Classification Models<ins/><center/>
-### <center>Andrew Cole<center/>
+# Customer Churn Analysis — Telco CRM Insights
+**Author: Namrata Pote** | Business Analyst & Data Science Enthusiast  
+🔗 [LinkedIn](https://linkedin.com/in/namrata-pote) | 📧 potenamrata456@gmail.com
 
+---
 
-Please refer to the links below for a detailed blog post walking through the analysis:
-* **Exploratory Data Analysis**: https://medium.com/@andrewcole.817/customer-churn-analysis-eda-a688c8a166ed
-* **Building the Logistic Regression Model:** https://towardsdatascience.com/predicting-customer-churn-using-logistic-regression-c6076f37eaca
+## 📌 Project Overview
+This project analyzes customer churn behavior for a telecom company 
+using Exploratory Data Analysis (EDA) and Machine Learning classification 
+models. As a Business Analyst, the goal is not just to build models — 
+but to extract actionable CRM insights that help retain customers.
 
+---
 
-### <ins>Project Overview<ins/>
-In the commercial world, customers are king. Understanding the customer is of the utmost importance and understanding their behavior patterns can lead to very impactful business decisions. **Customer Churn** is the rate at which a commercial customer leaves the commercial business/platform and takes their money elsewhere, and understanding the underlying customer patterns will greatly impact a business' ability to retain their customers. As a data researcher trying to break into the professional world, I thought it would be pertinent to get a better understanding of what these churn data features may look like and how they can be used to understand the customer.
+## 🎯 Business Problem
+Customer churn directly impacts revenue. Retaining an existing customer 
+is 5x cheaper than acquiring a new one. This analysis identifies:
+- **Who** is likely to churn?
+- **Why** are they churning?
+- **What** can the CRM/business team do to retain them?
 
-In this repository I will utilize a telecommunication company's (Telco) customer dataset to perform a very detailed Exploratory Data Analysis to develop a strong understanding of any patterns or trends existing in our data. Secondly, I will process the data and build a series of binary outcome classification models that will try to effectively predict whether a customer will or will not churn from the telecommunications platform.
+---
 
-### <ins>The Data<ins/>
-The data is sourced from Kaggle (https://www.kaggle.com/blastchar/telco-customer-churn). Our dataset contains 7043 entries representing 7043 unique customers. There are 21 columns, with 19 features (target feature = 'Churn'). The features are numeric and categorical in nature, so we will need to address these differences before modeling.
+## 📊 Dataset
+- Source: [Kaggle — Telco Customer Churn](https://www.kaggle.com/blastchar/telco-customer-churn)
+- 7,043 customers | 21 features | Binary target: Churn (Yes/No)
 
-### <ins/>Included in this Repository<ins/>
-* EDA.ipynb : Commented Walkthrough of the Exploratory Data Analysis process and visualizations
-* decision_tree.ipynb: Decision Tree Classification Model
-* KNN.ipynb: K-Nearest Neighbors Classification Model 
-* decision_tree.ipynb: Decision Tree Classification Model    
-* rf_bagging.ipynb: Random Forrest and BaggingClassifier Classification Models
+---
 
-* regression_module.py: Module with functions for execution of Logistic regression
-* eda_module.py: Module with functions for execution of EDA process
-    
-* Telco Customer Churn Analysis.pdf: Google slides presentation (as if an insight presentation was required per deliverables)
-    
-* data [folder]: Folder containing all used data
-* pics [folder]: Folder containing figures & screenshots for medium blog posts
-    
+## 🔍 Models Used
+| Model | Accuracy |
+|---|---|
+| Logistic Regression | ~80% |
+| Decision Tree | ~78% |
+| Random Forest + Bagging | ~82% |
+| KNN | ~76% |
 
+---
+
+## 💡 Key Business Insights (BA Perspective)
+- Customers on **month-to-month contracts** churn 3x more than annual contracts
+- **High monthly charges** + short tenure = highest churn risk
+- Customers without **tech support or online security** churn more
+- **Senior citizens** have higher churn rate despite lower volume
+
+## ✅ CRM Recommendations
+1. Offer contract upgrade incentives to month-to-month customers
+2. Flag high-charge + low-tenure customers in CRM for proactive outreach
+3. Bundle tech support with onboarding for new customers
+4. Create targeted retention campaigns for senior citizen segment
+
+---
+
+## 🛠️ Tools & Skills
+`Python` `Pandas` `Scikit-learn` `Matplotlib` `Seaborn` `Jupyter Notebook`
+
+---
+
+## 📁 Repository Structure
+- `EDA.ipynb` — Exploratory Data Analysis
+- `log_regression.ipynb` — Logistic Regression Model
+- `decision_tree.ipynb` — Decision Tree Model
+- `rf_bagging.ipynb` — Random Forest & Bagging
+- `KNN.ipynb` — K-Nearest Neighbors
+- `telco_churn_presentation.pdf` — Business Insights Presentation
